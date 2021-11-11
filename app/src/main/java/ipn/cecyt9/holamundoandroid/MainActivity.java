@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void abrirSuma() {
         Intent intent = new Intent(this , SumaActivity.class);
+    startActivity(intent);
     }
 
 }
