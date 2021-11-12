@@ -13,27 +13,27 @@
 
         <Button
             android:id="@+id/Button_suma"
-            android:layout_width="wrap_content"
+            android:layout_width="163dp"
             android:layout_height="wrap_content"
             android:text="Suma" />
 
         <Button
-            android:id="@+id/boton_Macz"
-            android:layout_width="wrap_content"
+            android:id="@+id/Button_resta"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="resta" />
 
         <Button
-            android:id="@+id/boton_Macz2"
+            android:id="@+id/Button_multiplicacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="multiplicación" />
 
         <Button
-            android:id="@+id/boton_Macz3"
-            android:layout_width="wrap_content"
+            android:id="@+id/Button_division"
+            android:layout_width="162dp"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="división" />
 
     </LinearLayout>
 
