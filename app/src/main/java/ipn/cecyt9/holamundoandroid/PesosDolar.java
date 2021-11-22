@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import static android.widget.Toast.LENGTH_SHORT;
@@ -15,11 +16,13 @@ public class PesosDolar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pesos_dolar);
+
     }
     Double resultado;
     Double resultado2;
     Double numero1;
     Double numero2;
+
 
 
 
@@ -67,7 +70,7 @@ public class PesosDolar extends AppCompatActivity {
         TextView tv = (TextView) findViewById(R.id.numeros2) ;
 
         try {
-            resultado2 = numero2 * 0.048;
+            resultado2 = numero2 / 0.048;
 
             tv.setText(resultado2.toString());
         }catch(NumberFormatException nfe){
@@ -82,5 +85,8 @@ public class PesosDolar extends AppCompatActivity {
         TextView tv = (TextView) findViewById(R.id.numeros2) ;
         tv.setText("");
     }
+
+
+
 
 }
