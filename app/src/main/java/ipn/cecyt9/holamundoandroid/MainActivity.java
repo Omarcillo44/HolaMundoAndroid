@@ -17,11 +17,14 @@ public class MainActivity extends AppCompatActivity {
     { }
     public void division(View miView)
     { }
+    public void pesosdolar(View miView)
+    { }
 
     private Button Button_suma;
     private Button Button_resta;
     private Button Button_division;
     private Button Button_multiplicacion;
+    private Button ButtonPesosDolar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Button_resta = findViewById(R.id.Button_resta);
         Button_multiplicacion = findViewById(R.id.Button_multiplicacion);
         Button_division = findViewById(R.id.Button_division);
+        ButtonPesosDolar = findViewById(R.id.ButtonPesosDolar);
 
         Button_suma.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ButtonPesosDolar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirPesosDolar();
+            }
+        });
+
     }
 
     private void abrirSuma() {
@@ -81,4 +92,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this , divisionActivity.class);
         startActivity(intent);
     }
+
+    private void abrirPesosDolar() {
+        Intent intent = new Intent(this , PesosDolar.class);
+        startActivity(intent);
+    }
+
 }
