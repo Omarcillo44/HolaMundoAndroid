@@ -36,7 +36,7 @@ public class PesosDolar extends AppCompatActivity {
         TextView tv = (TextView) findViewById(R.id.numeros) ;
 
         try {
-            resultado = numero1 * 0.048;
+            resultado = numero1 * 0.047;
 
             tv.setText(resultado.toString());
         }catch(NumberFormatException nfe){

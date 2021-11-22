@@ -39,7 +39,7 @@
             android:id="@+id/ButtonPesosDolar"
             android:layout_width="168dp"
             android:layout_height="wrap_content"
-            android:text="Kilowatts a Watts" />
+            android:text="Pesos a Dólares" />
 
     </LinearLayout>
 
